@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+</head>
+<body>
+
+	<h1>Registration Form</h1>
+
+	<form action="RegistrationFormAction.html" method="POST">
+		
+		<!-- Input Text Field -->
+		<fieldset>
+		    <legend>Basic Information :</legend>
+			<br>
+		          <label for="fname">First Name :</label>
+		          <input type="text" name="fname" id="fname">
+                  <label for="fname">Last Name :</label>
+		          <input type="text" name="fname" id="fname">
+
+		    <br>
+
+		          <label for="gender">Gender :</label>
+		          <input type="radio" id="male" name="gender" value="male">
+                  <label for="male">Male </label>
+                  <input type="radio" id="female" name="gender" value="female">
+                  <label for="female">Female </label>
+                 <input type="radio" id="other" name="gender" value="other">
+                 <label for="other">Other </label>
+
+		    <br>
+
+			<label for="birthdaytime">DoB(date and time):</label>
+            <input type="datetime-local" id="birthdaytime" name="birthdaytime"> 
+			<br>         
+			<label for="religion">Religion :</label>
+			<select id="religion" name="religions">
+			  <option value="Muslim">Muslim</option>
+			  <option value="Hindu">Hindu</option>
+              <option value="Christianity">Christianity</option>
+              <option value="Buddhism">Buddhism</option>
+              <option value="Sikhism">Sikhism</option>
+
+			  <option value="others">Other</option>
+			  
+			</select>
+
+			
+
+		    <br>
+
+
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend>Contact Information</legend>
+
+			<label for="preaddress">Present Address :</label>
+			<input type="text" name="preaddress" id="preaddress">
+
+	  <br>
+	  
+			<label for="paraddress">Permanent Address :</label>
+			<input type="text" name="paraddress" id="paraddress">
+
+	  <br>
+
+	  <label for="phone"> Phone number:</label>
+	  <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+
+	  <br>
+	  <label for="email"> Email:</label>
+      <input type="email" id="email" name="email">
+	  <br>
+
+	  <label for="pweblink">Personal website link :</label>
+      <input type="url" id="pweblink" name="pweblink">
+	  <br>
+
+
+	</fieldset>
+
+	
+
+		<br>
+
+		<!-- Input submit -->
+		<input type="submit" value="Submit">
+
+	</form>
+
+</body>
+</html>
